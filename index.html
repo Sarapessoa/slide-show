@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-items">
+            <img src="assets/image-1.png" alt="" class="slider-item">
+            <img src="assets/image-2.png" alt="" class="slider-item">
+            <img src="assets/image-3.png" alt="" class="slider-item">
+        </div>
+        <div class="slider-controls">
+            <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+            <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+        </div>
+
+        <div class="slider-indicators">
+            <span onclick="moveTo(1)"></span>
+            <span onclick="moveTo(2)"></span>
+            <span onclick="moveTo(3)"></span>
+        </div>
+        <div class="slider-content">
+            <h3>Texto Numero 1</h3>
+            <h3>Texto Numero 2</h3>
+            <h3>Texto Numero 3</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
